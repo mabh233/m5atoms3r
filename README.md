@@ -28,8 +28,15 @@ This is the firmware repository for M5AtomS3R. M5AtomS3R is a compact developmen
 ### 使用 esptool 烧录示例 / Flashing Example with esptool
 
 ```bash
+# 完整固件烧录（从地址 0x0 开始）/ Flash complete firmware (starting from address 0x0)
 esptool.py --chip esp32s3 --port /dev/ttyUSB0 write_flash 0x0 firmware.bin
+
+# 或者使用 M5Burner 图形化工具 / Or use M5Burner GUI tool
 ```
+
+> 注意：根据固件类型，烧录地址可能不同。如遇到问题，请参考 M5Stack 官方文档。
+> 
+> Note: The flash address may vary depending on the firmware type. Please refer to M5Stack official documentation if you encounter issues.
 
 ## 关于 M5AtomS3R / About M5AtomS3R
 
@@ -39,4 +46,6 @@ M5AtomS3R is a compact IoT development board suitable for various embedded proje
 
 ## 许可证 / License
 
-请参考项目许可证文件。/ Please refer to the project license file.
+本项目的许可证信息尚未明确指定。请联系项目维护者了解使用条款。
+
+The license for this project is not explicitly specified. Please contact the project maintainer for usage terms.
